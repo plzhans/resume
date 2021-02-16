@@ -1,0 +1,16 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+@import 'modern-resume-theme';
+
+p.blank {
+    min-height : 10px;
+}
+
+.layout p.quote{
+    text-align: left;
+    padding : 0rem;
+    font-size: 2.0rem;
+    font-style: normal;
+}

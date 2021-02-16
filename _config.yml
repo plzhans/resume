@@ -1,0 +1,344 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 손원철
+title: 장애를 대비하는 개발자
+email: plzhans@gmail.com
+#website: plzhans.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+#twitter_username: plzhans
+github_username:  plzhans
+# stackoverflow_username: "plzhans"
+# dribbble_username: plzhans
+# facebook_username: plzhans
+# flickr_username: plzhans
+#instagram_username: plzhans
+linkedin_username: plzhans
+# xing_username: plzhans
+# pinterest_username: plzhans
+#youtube_username: plzhans
+# googleplus_username: +plzhans
+# orcid_username: 0000-0000-0000-0000
+
+# Additional icon links
+additional_links:
+# - title: 
+#  icon: fas fa-globe
+#  url: 
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+gtm: "GTM-58Q77FW"
+gtag: "G-6T6KKD9WSE"
+#google_analytics: "G-6T6KKD9WSE"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | 
+  안녕하세요. 
+
+  <p class="blank"></p>
+
+  최근에는 <mark>분산 처리</mark>와 신속한 장애 대응을 위해 <mark>MSA</mark> 구조로 개발하였고
+  
+  배포 과정을 단축하기 위해서 <mark>배포 자동화</mark>와 <mark>CI/CD</mark> 환경 구축을 하려고 노력합니다.
+
+  <p class="blank"></p>
+
+  *"그 날의 장애는 예상하지 못한 포인트 뿐만 아니라 알면서 방치 했던 곳에서 찾아 올지어다."*
+  > 불현듯이 발생할 장애에 대해서 항상 고민하고 어떻게 해쳐 나갈지 고민 하는것을 좋아합니다.
+  
+  *"기어코 장애는 찾아 오더라"*
+  > 장애가 일어난다면 장애를 국지화 시키고 이를 복구하기 위해서 어떻게 할것인가 고민합니다.
+
+  Skill : 
+
+  <mark>C#.NET</mark>, <mark>Java</mark>, <mark>NodeJS</mark>, <mark>Typescript</mark>로 개발하였고 새로운 언어로 개발하는 것을 좋아합니다.
+
+  최근에는 <mark>Rust</mark>라는 GC가 없는 언어로 개발할 기회가 있었는데 그 후로 새로운 취미가 되었습니다.
+
+  클라우드 서비스는 <mark>AWS</mark>를 주로 사용하였고 DB는 <mark>MySQL</mark>을 주로 사용했습니다.
+  
+  Cache나 실시간 스코어 처리를 위해서 <mark>Redis</mark>를 주로 사용했습니다.
+
+  서비스를 위해 <mark>AWS</mark>, <mark>Toast</mark> 클라우드를 주로 사용 했습니다.
+ 
+
+content:
+  - title: Projects 
+    layout: list
+    content:
+      - layout: left
+        title: 3D 메타버스 플랫폼
+        sub_title : 플랫폼 서비스 개발
+        additional_links:
+          - title: 소개영상 - 카카오 유니버스의 시작
+            icon: fab fa-youtube
+            url: https://youtu.be/IKoiUgAxzrI?si=YJGas2UNAJ4tyyaG
+        quote: >
+          "3D 메타버스 + 쇼셜 서비스를 만들수 있게 해주는 플랫폼"
+        description: | 
+          글로벌 서비스
+          - 글로벌 서비스를 목표로 개발
+          - 카카오(넵튠)의 메타버스 개발을 위해 투자 받은 자회사
+          
+          기술
+          - .Net 6.0, 
+          - Rust
+          - MongoDB, Redis, Elasticsearch, Clickhouse
+          - Docker, Gitlab CI/CD, 빌드 및 배포 자동화
+          - AWS
+
+      - layout: left
+        title: 수집형 퍼즐 RPG 게임
+        sub_title : 게임 서버 개발
+        quote: >
+          "수집형 퍼즐 RPG 게임 신규 개발"
+        description: | 
+          글로벌 서비스
+          - 글로벌 서비스를 위하여 분산 구조로 개발
+          
+          기술
+          - .Net, gRPC
+          - Mysql, Redis
+          - ELK, Docker, K8S
+          - Gitlab CI/CD, 빌드 및 배포 자동화
+
+      - layout: left
+        title: RWBY Amity Arena
+        sub_title: 게임 서버 개발
+        additional_links:
+          - title: RWBY Amity Arena Teaser Trailer
+            icon: fab fa-youtube
+            url: https://youtu.be/rO-WVZbBDMw
+          - title: RWBY Amity Arena | THIS SETUP IS *INSANE*!! (EMERALD+NEO)
+            icon: fab fa-youtube
+            url: https://youtu.be/KEKpX-IH2ik
+        quote: >
+          "실시간 PvP 모바일 게임 서버 개발"
+        description: | 
+          글로벌 서비스
+          - 글로벌 원빌드 형태로 개발 되었고 메인(팜), 클랜, 커뮤니티, 매칭, 로그, 게임, 배틀 서버 구조로 분리 개발
+            - 네트워크 레이턴시를 줄이기 위해 게임, 배틀 서버는 지역별(한국, 중국, 미국)로 분리 배치 되도록 개발 
+            - [![Service_structure](images/projects/baobabnet-bg5/BG5_Service_structure.jpg){: width="100" target="_blank"}](images/projects/baobabnet-bg5/BG5_Service_structure.pdf)
+          - 유저 매칭은 지역, 우선순위, 점수, 트래픽 등을 고려해서 최적의 배틀 서버 선택하도록 개발
+          - 장애 대응을 위해서 MSA 구조로 개발 되었고 서비스 중에 점검없이 서버 패치 가능 하도록 개발
+          - WebAPI, TCP 소켓 서버 개발
+          - 게임 운영툴 및 지표분석을 위한 웹사이트 개발
+          - NHN 한게임 퍼블리싱 하다가 자체 서비스 전향
+
+          기술
+          - .NET, Socket server
+          - AWS Auroa, Mysql, Redis
+          - AWS Cloud, Toast Cloud
+
+      - layout: left
+        title: Abyss9
+        sub_title: 게임 서버 개발
+        additional_links:
+          - title: Abyss9 Play Movie1
+            icon: fab fa-youtube
+            url: https://youtu.be/PMZPVVMj57Y
+          - title: Abyss9 Play Movie2
+            icon: fab fa-youtube
+            url: https://youtu.be/aRTKiqvdQBo
+        quote: >
+          "성장형 RPG 게임"
+        description: | 
+          글로벌 서비스
+          - REST API 서비스로 개발
+          - Toast gamebase 플랫폼 사용
+          - 게임 운영툴 및 지표분석을 위한 웹사이트 개발
+          - 자체 서비스 하다가 외부 퍼블리싱
+          - [![Service_structure](images/projects/baobabnet-bg7/BG7_Service_structure.jpg){: width="100" target="_blank"}](images/projects/baobabnet-bg7/BG7_Service_structure.pdf)
+
+          기술
+          - Nodejs, Typescript, Nginx
+          - AWS Auroa, Redis
+          - AWS Cloud, Toast Cloud
+
+      - layout: left
+        title: Helpmejack
+        sub_title: 게임 서버 개발
+        additional_links:
+          - title: HelpMeJack Awesome new game!
+            icon: fab fa-youtube
+            url: https://youtu.be/jIWOUUvDmcc
+        quote: >
+          "성장형 RPG 모바일 게임 서버 개발"
+        description: | 
+          글로벌 서비스
+          - 글로벌 원빌드 형태로 개발 되었고 메인(팜), 게임, 로그 서버 구조로 분리 개발
+          - TCP 소켓 서버 개발
+          - 게임 운영툴 및 지표분석을 위한 웹사이트 개발
+          - NHN 한게임 퍼블리싱
+
+          기술
+          - .NET, Socket server
+          - Mysql
+
+      - layout: left
+        title: 잼게임 포탈 개발 
+        sub_title: 웹서비스 개발
+        quote: >
+          "채널링 서비스를 위한 게임 사이트 개발"
+        description: | 
+          자사 게임을 통합 서비스 하기 위해서 통합 사이트 작업
+          - 개별로 운영중인 게임 서비스를 통합 게임 사이트로 단일화
+          - 기존 게임 사이트를 통합 사이트로 전환하는 시스템 개발
+          - 전환에 따른 빌링 통합, 맴버쉽 통합 개발
+            - PG는 이니시스, 모빌리언스, KCP, 시공사 등등 사용
+          - 각 게임은 잼게임을 통한 채널링 형태로 구축되도록 하고 타업체의 게임 서비스도 가능 하도록 준비
+
+          기술
+          - Java Spring, ASP.NET
+          - Web API 서비스 개발
+          
+      - layout: left
+        title: 파워레인저 온라인
+        sub_title: 웹서비스 개발
+        quote: >
+          "파워레인저 게임 사이트 개발"
+        description: | 
+          게임 서비스용 맴버십, 빌링 채널링 사이트 개발
+          - 플레이넷(구 네이버게임) 외 기타 채널링 개발
+          - 자체 맴버십을 위한 결제 서비스 개발
+
+          기술
+          - ASP.NET 개발
+          - WCF, Web API 서비스 개발
+
+      - layout: left
+        title: 디지몬마스터즈 
+        sub_title: 웹서비스 개발
+        quote: >
+          "디지몬마스터즈 게임 사이트 개발"
+        description: | 
+          게임 서비스용 맴버십, 빌링 채널링 사이트 개발
+          - 플레이넷(구 네이버게임), mgame, imbc game 외 기타 채널링 개발
+          - zamgame 통합 사이트 구축
+          - 자체 맴버십을 위한 결제 서비스 개발
+
+          기술
+          - ASP.NET 개발
+          - WCF, Web API 서비스 개발
+
+      - layout: left
+        title: 느와르 온라인
+        sub_title: 웹서비스 개발
+        quote: >
+          "느와르 온라인 게임 사이트 개발"
+        description: | 
+          게임 서비스용 맴버십, 빌링 채널링 사이트 개발
+          - 자체 맴버십을 위한 결제 서비스 개발
+
+          기술
+          - ASP.NET 개발
+          - WCF, Web API 서비스 개발
+
+      - layout: left
+        title: 디지몬RPG
+        sub_title: 웹서비스 개발
+        quote: >
+          "디지몬RPG 사이트 개발"
+        description: | 
+          게임 서비스용 맴버십, 빌링 채널링 사이트 개발
+          - mgame, 채널링 개발
+          - zamgame 통합 사이트 구축
+          - 자체 맴버십을 위한 결제 서비스 개발
+
+          기술
+          - ASP.NET 개발
+          - WCF, Web API 서비스 개발
+
+      - layout: left
+        title: 옥션 e컨텐츠몰
+        sub_title: 웹서비스 개발
+        quote: >
+          "contetns.auction.co.kr 사이트 운영"
+        description: | 
+          엠군으로 부터 사업을 인수 받아 e컨텐츠몰 운영 및 추가 개발
+
+          기술
+          - Java, MySQL
+          - Auction api
+
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: 컬러버스
+        link_text: 컬러버스
+        sub_title: 서버 개발팀장
+        caption: 2022.04 ~ 2023.12
+        quote: >
+          글로벌 메타버스 서비스 플랫폼 개발사, 카카오 계열사
+        description: | 
+          메타버스 플랫폼 서비스 개발
+
+      - layout: left
+        title: 그라비티
+        link: https://www.gravity.co.kr
+        link_text: 그라비티
+        sub_title: 프로그램 유닛 - 서버 개발 리더
+        caption: 2022.05 ~ 2022.03
+        quote: >
+          라그나로크를 만든 회사
+        description: | 
+          모바일 게임 서버 개발
+          - <mark>신규 프로젝트</mark> 게임 서버 개발 전체를 총괄
+          
+      - layout: left
+        title: 바오밥넷
+        link: http://www.baobabnet.co.kr
+        link_text: Baobabnet
+        sub_title: 서버 개발팀장
+        caption: 2014.08 ~ 2020.11
+        quote: >
+          글로벌 서비스를 위한 모바일 게임 개발 회사, NHN 자회사
+        description: | 
+          모바일 게임 서버 개발
+          - <mark>Abyss9</mark>, <mark>RWBY: Amity Arena</mark> 게임 서버 개발 전체를 총괄 개발 및 운영
+          - <mark>Help me Jack</mark> 후반에 참여 하여 후반부 컨텐츠 개발 및 서비스 운영 
+
+      - layout: left
+        title: 호라이즌테크놀로지
+        link: http://www.movegames.co.kr
+        link_text: 무브게임즈
+        sub_title: 웹 개발팀장
+        caption: 2009.11 ~ 2014.07
+        quote: >
+          온라인 게임 서비스 개발회사
+        description: |
+          무브게임즈의 분리 법인으로 게임 서비스를 위한 웹 서비스 개발 및 운영
+          - <mark>잼게임</mark> 게임 포탈 사이트 개발
+          - <mark>느와르온라인</mark>, <mark>파워레인져</mark> 신규 서비스 사이트 개발
+          - <mark>디지몬RPG</mark>, <mark>디지몬마스터즈</mark> 게임 사이트 재개발
+          - <mark>옥션 e콘텐츠</mark> 추가 개발 및 유지보수
+
+# Footer
+footer_show_references: true
+# references_title: References on request (Override references text)
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
