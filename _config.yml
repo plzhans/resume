@@ -75,7 +75,12 @@ about_content: |
   Cache나 실시간 스코어 처리를 위해서 <mark>Redis</mark>를 주로 사용했습니다.
 
   서비스를 위해 <mark>AWS</mark>, <mark>Toast</mark> 클라우드를 주로 사용했습니다.
- 
+
+  <p class="blank"></p>
+
+  Hobby :
+
+  최근에는 [키즈노트 알림장 다운로드 프로그램](https://github.com/plzhans/kidsnote-backup), [openai를 이용한 쇼츠 영상 자동화](https://github.com/plzhans/ejegong-creator-ai) 프로그램을 제작하고 있습니다.
 
 content:
   - title: Projects 
