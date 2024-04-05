@@ -10,7 +10,7 @@ jekyll [modern-resume-theme](https://github.com/sproogen/modern-resume-theme) í…
    ```
 2. Debug View
    ```
-   bundle exec jekyll serve 
+   bundle exec jekyll serve
    ``````
 
 # Deploy
