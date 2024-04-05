@@ -120,7 +120,7 @@ content:
       - layout: left
         title: 퍼피레드
         sub_title : 메타버스
-        caption: 2022.04 ~ 2023.07
+        caption: 2022.04 ~ 2022.07
         additional_links:
           - title: 퍼피레드
             icon: fab fa-app-store
