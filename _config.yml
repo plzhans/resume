@@ -7,9 +7,9 @@ version: 2
 
 # Personal info
 name: 손원철
-title: 장애를 대비하는 개발자
+title: 서비스 안정성과 구조를 설계하는 서버 엔지니어
 email: plzhans@gmail.com
-#website: plzhans.github.io
+# website: https://blog.plzhans.com
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -48,336 +48,310 @@ gtag: "G-6T6KKD9WSE"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: |
+  웹 개발로 커리어를 시작해 15년 이상 다양한 서비스의 설계·개발·운영을 경험해 왔습니다.
 
-  안녕하세요. 
+  초기에는 웹 서비스와 백오피스 시스템을 중심으로 인증, 빌링, 통계, 운영툴 등을 개발하며
+  서비스 구성 요소들이 어떻게 연결되고 운영되는지에 대한 기본기를 다졌습니다.
 
-  <p class="blank"></p>
+  이후 모바일 게임 서버와 플랫폼 개발 영역으로 확장하며
+  단순 기능 구현보다 서비스가 장기적으로 안정적으로 운영될 수 있는 구조를 만드는 역할을 맡아 왔습니다.
 
-  C#으로 주로 개발하였고 최근에는 Rust로 병행하여 개발하였습니다. 
-  
-  빌드 자동화와 지속적인 소스 관리를 위해서 <mark>GitLab CI/CD</mark>, <mark>GitHub Action</mark> 환경을 선호합니다.
+  트래픽 증가, 서비스 확장, 운영 비용과 안정성, 개발 생산성과 유지보수성 사이의 균형을 고민하며
+  시스템 전반을 구조적으로 개선하는 일을 주로 해왔습니다.
 
-  <p class="blank"></p>
+  여러 프로젝트에서 개발자이자 팀 리더 역할을 수행하며
+  기술 선택과 아키텍처 방향을 결정하고 팀이 안정적으로 개발을 이어갈 수 있는 환경을 만드는 데 집중했습니다.
 
-  *"그날의 장애는 예상하지 못한 곳에서 찾아 올지어다."*
-  > 불현듯이 발생할 장애에 대해서 항상 고민하고 어떻게 헤쳐 나갈지 고민하는 것을 좋아합니다.
-  
-  *"기어코 장애는 찾아오더라"*
-  > 장애가 일어난다면 장애를 국지화 시키고 이를 복구하기 위해서 어떻게 할 것인가 고민합니다.
+  문제를 단순히 해결하는 데서 그치지 않고,
+  같은 문제가 반복되지 않도록 구조와 흐름을 정리하는 방식을 선호합니다.
 
-  Skill : 
+  특정 언어나 도메인에 스스로를 한정하기보다는
+  서비스의 목적과 팀 상황에 맞는 기술을 선택하는 것을 중요하게 생각합니다.
 
-  <mark>C#.NET</mark>, <mark>Java</mark>, <mark>NodeJS</mark>, <mark>Typescript</mark>로 개발하였고 새로운 언어로 개발하는 것을 좋아합니다.
+  C#, TypeScript, Rust, Java, Python 등 다양한 언어와 환경을 경험했으며,
+  새로운 기술을 도입할 때도 실질적인 효과와 운영 관점에서의 이점을 기준으로 판단해 왔습니다.
 
-  최근에는 <mark>Rust</mark>라는 GC가 없는 언어로 개발할 기회가 있었는데 그 후로 새로운 취미가 되었습니다.
+  개발은 업무이기 이전에 문제를 해결하는 과정이라고 생각합니다.
+  개인적으로도 일상에서 불편한 점을 개선하기 위한 소규모 자동화 도구나
+  백업 프로그램을 만들어 사용하는 것을 즐깁니다.
 
-  클라우드 서비스는 <mark>AWS</mark>를 주로 사용하였고 DB는 <mark>MySQL</mark>을 주로 사용했습니다.
-  
-  Cache나 실시간 스코어 처리를 위해서 <mark>Redis</mark>를 주로 사용했습니다.
-
-  <p class="blank"></p>
-
-  취미 개발 :
-
-  [키즈노트 백업](https://github.com/plzhans/kidsnote-backup), [AI 쇼츠 영상 자동화](https://github.com/plzhans/ejegong-creator-ai) 개발 중입니다.
-
+  앞으로도 팀과 서비스에 안정감을 줄 수 있는 개발자로서
+  복잡한 문제를 단순하게 정리하고 지속 가능한 구조를 만들어 가는 역할을 수행하고자 합니다.
 content:
-  - title: Projects 
+  - title: Projects
     layout: list
     content:
       - layout: left
+        title: 국가정황정보 통합관리 크롤링 플랫폼
+        sub_title: 분석 서버 · 크롤링 에이전트
+        caption: 2025.09 ~ 2026.01
+        quote: 보안 제약 환경에서 대규모 외부 정황 정보를 수집·분석하는 내부 통합 플랫폼
+        description: |
+          - 내부망 분석 서버(Java)와 외부망 크롤링 에이전트(Python)를 분리 설계
+          - 중앙 제어 방식으로 수집 규칙·스케줄·정책을 관리하는 구조 구현
+          - 디스크 캐시 + 병렬 수집 구조로 대용량 파일 수집 성능 개선
+          - ShedLock 기반 동시성 제어로 제한된 인프라 환경에서 안정성 확보
+          - GitLab CI 기반 RedHat 환경 대응 빌드·배포 자동화 구성
+
+          Skill :
+            - Java(Spring), Python
+            - MySQL, Redis
+            - GitLab CI, Docker
+
+      - layout: left
+        title: 겟앰프드 키우기
+        sub_title: 모바일 게임 서버
+        caption: 2024.09 ~ 2025.10
+        quote: 모바일 게임 서버 구조 개선 및 서비스 안정화
+        description: |
+          - 프리랜서로 합류 후 서버 안정화 성과를 인정받아 정규직 전환
+          - Azure 기반 기존 서버 구조 분석 및 병목 구간 개선
+          - 동시 접속자 기준 서버 분할 및 DB 샤딩 기반 분산 구조 적용
+          - 인증 서비스를 별도 gRPC 서비스로 분리하여 확장성 확보
+          - C# 시뮬레이션 봇과 JMeter를 활용한 성능 테스트 체계 구축
+          - Redis Pub/Sub 기반 글로벌 토너먼트 채팅 기능 신규 개발
+          - ELK 스택 직접 구축으로 로그 수집 비용 절감 및 분석 효율 개선
+
+          Skill :
+            - C# .NET, gRPC
+            - MySQL, Redis
+            - Azure
+            - JMeter, ELK
+
+      - layout: left
         title: 컬러버스 플랫폼
-        sub_title : 3D 쇼셜 플랫폼
+        sub_title: 글로벌 3D 소셜 플랫폼
         caption: 2022.08 ~ 2023.12
-        additional_links:
-          - title: 소개영상 - 카카오 유니버스의 시작
-            icon: fab fa-youtube
-            url: https://youtu.be/IKoiUgAxzrI?si=YJGas2UNAJ4tyyaG
-        quote: 웹 기반의 3D 월드를 만들 수 있는 플랫폼 서비스 (글로벌 서비스)
-        description: | 
-          ■	인증(Rust), 리소스(Rust), 마켓(C#), 아이템(C#), 빌링(C#) 서비스 개발
-          -	C# 공통 모듈 개발, Rust 공통 모듈 일부 개발, 
-          - 개발 인프라 환경 구축
+        quote: 웹 기반 3D 월드를 생성·운영할 수 있는 메타버스 플랫폼
+        description: |
+          - 분산 서비스 아키텍처 기반 플랫폼 백엔드 설계 및 개발 총괄
+          - 인증·리소스(Rust), 아이템·마켓·빌링(C#) 서비스 분리 개발
+          - MongoDB + Redis 캐시 기반 확장 중심 구조 설계
+          - NATS 메시지 큐 도입으로 서비스 간 결합도 최소화
+          - GitLab CI/CD 기반 빌드·배포 자동화 및 인프라 구성
 
-          ■ 리소스 서비스 개발(동영상, 이미지 업로드)
-          -	thumbnail, resizeing 등 커스텀 이미지 처리
-          -	동영상은 AWS Elemental MediaConvert를 이용해서 HLS 지원
-
-          ■ MongoDB를 메인으로 사용하고 Redis(LRU)를 이용해서 db 캐싱
-
-          ■ 트랜잭션이 중요한 서비스는 MySQL 사용 (ex. 빌링)
-
-          ■ Message Queue는 NATS 사용
-
-          ■ GitLab CI/CD 이용한 빌드 및 배포 자동화 구축
-            -	Self hosted GitLab server +runner + aws docker registry 사용
-
-          ■ Skill : 
-            - Rust, C#, 
-            - monogoDb, Redis, NATS(MQ), Elasticsearch
-            - AWS EC2, ELB, ECR, ALB, MediaConvert
+          Skill :
+            - Rust, C#
+            - MongoDB, MySQL, Redis, NATS
+            - AWS (EC2, ALB, ECR, MediaConvert)
 
       - layout: left
         title: 퍼피레드
-        sub_title : 메타버스
-        caption: 2022.04 ~ 2022.07
-        additional_links:
-          - title: 퍼피레드
-            icon: fab fa-app-store
-            url: https://apptopia.com/ios/app/1576310836/about
-        quote: 메타버스에서 자시만의 공간과 집을 만드는 쇼셜 서비스
-        description: | 
-          ■ 요리하기 컨텐츠 개발
+        sub_title: 모바일 게임 · 메타버스
+        caption: 2022.03 ~ 2022.07
+        quote: 자사 IP 기반 모바일 게임 서버 개발
+        description: |
+          - 요리 콘텐츠 서버 기능 개발
+          - 친구 서비스 일부 기능 개발 및 유지보수
 
-          ■ 친구 서비스 유지보수
-
-          ■ Skill : C#, MySQL, Redis, Kafka, Elasticsearch
+          Skill :
+            - C#
+            - MySQL, Redis
+            - Kafka, Elasticsearch
 
       - layout: left
         title: HelloHell
-        sub_title : 모바일 게임
+        sub_title: 글로벌 모바일 RPG
         caption: 2021.05 ~ 2022.03
-        additional_links:
-          - title: 
-            icon: fab fa-youtube
-            url: https://www.youtube.com/watch?v=13mACwr52X0
-        quote: 신규로 만드는 캐주얼 수집형 RPG 모바일 게임 (글로벌 서비스)
-        description: | 
-          ■	gRPC를 이용한 게임 서버 개발
+        quote: 신규 캐주얼 수집형 RPG 모바일 게임
+        description: |
+          - gRPC 기반 게임 서버 아키텍처 설계 및 핵심 기능 구현
+          - Redis 캐시 기반 조회 성능 최적화
+          - GitLab CI/CD 기반 서버 빌드·배포 자동화 구축
 
-          ■	MySQL 메인으로 사용하고 메모리 캐시로 Redis 사용
-
-          ■	GitLab CI/CD 이용한 빌드 및 배포 자동화 구축
-
-            - Self hosted GitLab runner 사용
-            
-          ■	Skill : C#, MySQL, Redis
-
-      - layout: left
-        title: Abyss9
-        sub_title : 모바일 게임
-        caption: 2019.09 ~ 2020.11
-        additional_links:
-          - title: 
-            icon: fab fa-youtube
-            url: https://www.youtube.com/watch?v=13mACwr52X0
-          - title: Abyss9 Play Movie1
-            icon: fab fa-youtube
-            url: https://youtu.be/PMZPVVMj57Y
-          - title: Abyss9 Play Movie2
-            icon: fab fa-youtube
-            url: https://youtu.be/aRTKiqvdQBo
-        quote: 성장형 RPG 모바일 게임 시작 (글로벌 서비스)
-        description: | 
-          ■	전체적인 서비스 및 운영툴 개발
-            - [![Service_structure](images/projects/baobabnet-bg7/BG7_Service_structure.jpg){: width="100" target="_blank"}](images/projects/baobabnet-bg7/BG7_Service_structure.pdf)
-
-          ■	GitLab CI/CD 이용한 빌드 및 배포 자동화 구축
-
-          ■	Toast Gamebase 사용
-
-          ■	Skill : Nodejs + typescript, MySQL, Redis, AWS EC2, ALB, CF
-
-      - layout: left
-        title: 클랜 마스터
-        sub_title : 모바일 게임
-        caption: 2019.06 ~ 2019.10
-        quote: 방치형 RPG 게임 신작
-        description: | 
-          ■	Skill : C#, MySQL
+          Skill :
+            - C#, gRPC
+            - MySQL, Redis
+            - GitLab CI/CD
 
       - layout: left
         title: RWBY 아미티 아레나
-        sub_title: 게임 서버 개발
+        sub_title: 글로벌 실시간 PvP 게임 서버
         caption: 2017.07 ~ 2020.11
-        additional_links:
-          - title: RWBY Amity Arena Teaser Trailer
-            icon: fab fa-youtube
-            url: https://youtu.be/rO-WVZbBDMw
-          - title: RWBY Amity Arena | THIS SETUP IS *INSANE*!! (EMERALD+NEO)
-            icon: fab fa-youtube
-            url: https://youtu.be/KEKpX-IH2ik
-        quote: RWBY 캐릭터를 사용한 실시간 PvP 게임 - NHN 한게임 퍼블리싱 (글로벌 서비스)
-        description: | 
-          ■	전체적인 데이터 모델링과 서비스 개발
+        quote: NHN 한게임 퍼블리싱 글로벌 실시간 PvP 모바일 게임
+        description: |
+          - 지역(리즌) 기반 매칭 및 배틀 서버 분산 구조 설계
+          - Socket 중심 실시간 통신 서버 직접 구현
+          - 배틀 리플레이·클랜·채팅 등 실시간 상호작용 기능 개발
+          - 글로벌 서비스 운영 비용 절감을 위한 인프라 구조 전환
 
-          ■	글로벌 유저 간에 트래픽 해결을 위해 분산 서비스 형태로 개발
-            -	서비스 별로 분산 개발 (인증, 게임, 클랜, 커뮤니티, 매칭, 로그, 배틀)
-            -	배틀 서버는 지역별(한국, 중국, 미국)로 분산 배치하고 최대한 같은 지역 유저 간에 매칭
-            -	Socket 서비스를 메인으로 사용하고 WebAPI 병행 사용
-            - [![Service_structure](images/projects/baobabnet-bg5/BG5_Service_structure.jpg){: width="100" target="_blank"}](images/projects/baobabnet-bg5/BG5_Service_structure.pdf)
+          Skill :
+            - C#, Socket, WCF
+            - MySQL, Redis
+            - AWS, NHN Toast Cloud
 
-          ■	SuperSocket과 ProudNet을 사용하고 이를 참고하여 소켓 개발
-            -	Why? 당시 ProudNet 비용이 갑자기 상향되었고 SuperSocket은 불필요한 기능과 코드가 많았음
+      - layout: left
+        title: Abyss9
+        sub_title: 글로벌 성장형 RPG
+        caption: 2019.09 ~ 2020.11
+        quote: 글로벌 서비스를 목표로 한 성장형 RPG 모바일 게임
+        description: |
+          - 게임 서버 및 웹 기반 운영툴 개발
+          - GitLab CI/CD 기반 빌드·배포 자동화
+          - Toast Gamebase 연계 인증 및 운영 처리
+          - AWS EC2 / ALB / CloudFront 환경에서 서비스 운영
 
-          ■	지표분석을 위한 통계 분석 서비스 개발
+          Skill :
+            - Node.js, TypeScript
+            - MySQL, Redis
+            - AWS, GitLab CI/CD
 
-          ■	AWS 사용하다가 NHN Toast Cloud 인프라 이관 
-          
-          ■	Toast Gamebase 사용
+      - layout: left
+        title: 클랜 마스터
+        sub_title: 방치형 RPG
+        caption: 2019.06 ~ 2019.10
+        quote: 방치형 RPG 모바일 게임
+        description: |
+          - 게임 서버 개발
 
-          ■	Skill : C#, Socket, WCF, MySQL, Redis, 로그분석(ELK), Mysql, AWS Auroa
+          Skill :
+            - C#
+            - MySQL
 
       - layout: left
         title: Azteka
-        sub_title : 모바일 게임
+        sub_title: 실시간 PvP 모바일 게임
         caption: 2015.12 ~ 2016.06
-        additional_links:
-          - title: 아즈테카(AZTEKA) CBT 플레이영상 안드로이드 전략 게임
-            icon: fab fa-youtube
-            url: https://www.youtube.com/watch?v=T1cFWqdoibw
-        quote: 실시간 PvP 게임 신작
-        description: | 
-          ■	NHN Toast 플랫폼 사용 - NHN 한게임 퍼블리싱 (글로벌 서비스)
+        quote: NHN 한게임 퍼블리싱 예정 실시간 PvP 게임
+        description: |
+          - ProudNet 기반 실시간 게임 서버 개발
+          - OBT 이후 사업적 이슈로 프로젝트 전환
 
-          ■	ProudNet (With web socket)
-
-          ■	Skill : C#, MySQL, WCF
+          Skill :
+            - C#
+            - MySQL
+            - WCF, ProudNet
 
       - layout: left
         title: 다크스톰
-        sub_title : 모바일 게임
+        sub_title: 실시간 PvP 프로토타입
         caption: 2015.06 ~ 2015.11
-        quote: 실시간 PvP 게임 
-        description: | 
-          ■	Skill : C#, Socket, MySQL
+        quote: 실시간 PvP 모바일 게임 프로토타입
+        description: |
+          - Socket 기반 실시간 게임 서버 개발
+
+          Skill :
+            - C#
+            - Socket
+            - MySQL
 
       - layout: left
-        title: Helpmejack
-        sub_title: 모바일 게임
+        title: HelpMeJack
+        sub_title: 글로벌 성장형 RPG
         caption: 2014.08 ~ 2014.12
-        additional_links:
-          - title: HelpMeJack Awesome new game!
-            icon: fab fa-youtube
-            url: https://youtu.be/jIWOUUvDmcc
-        quote: 성장형 RPG 게임 - NHN 한게임 퍼블리싱 (글로벌 서비스)
-        description: | 
-          ■	게임 컨텐츠, 로그 서비스 개발
-          
-          ■	게임 웹 운영툴 및 지표 분석 페이지 개발
-          
-          ■	NHN Toast 플랫폼 사용
-          
-          ■	Skill : C#, MySQL, WCF
+        quote: 글로벌 서비스를 목표로 한 성장형 RPG 모바일 게임
+        description: |
+          - 게임 콘텐츠 로직 개발
+          - 로그 수집 서비스 개발
+          - 웹 기반 운영툴 및 지표 분석 페이지 개발
+
+          Skill :
+            - C#
+            - MySQL
+            - WCF
+            - NHN Toast Gamebase
 
       - layout: left
-        title: 잼게임 포탈 사이트 구축
-        sub_title: 웹서비스
-        caption: 2014.02 ~ 2014.07
-        quote: 게임별 멤버쉽, 빌링 통합 사이트 구축
-        description: | 
-          ■	인증 및 회원 관련 시스템 구축
+        title: 잼게임 포털 사이트
+        sub_title: 게임 포털 · 빌링 플랫폼
+        caption: 2009.11 ~ 2014.07
+        quote: 다수 게임을 통합 관리하는 포털 서비스
+        description: |
+          - 게임 멤버십·빌링 통합 포털 구축
+          - 인증, 결제, 통계 시스템 설계·개발
+          - Windows Service 기반 백엔드 구성 요소 개발
 
-          ■	빌링 시스템 구축 및 PG 연동
-
-          ■	회원 전환 시스템 구축
-
-          ■	Skill : C#, WCF, Windows Service, MSSQL
-          
-      - layout: left
-        title: 게임 사이트 구축
-        sub_title: 웹서비스
-        quote: 자사 게임 사이트 구축 및 유지보수
-        description: | 
-          ■	신규 게임 사이트 구축 : 느와르 온라인, 파워레인져
-
-          ■	게임 사이트 재구축 및 유지보수 디지몬 RPG, 디지몬 마스터즈
-
-          ■	채널링 사이트 구축 : 네이버, 엠게임, MBC, 투니랜드
-
-          ■	빌링 구축 및 PG사 연동 : 이니시스, 모빌리언스, KCP, 시공사, 에그머니, G마켓, 네이버
-
-          ■	통합 통계 시스템 개발 : 각 게임 사이트의 매출과 지표를 통합해서 보는 사이트 구축
-          -	아이핀, 본인인증, 실명인증 연동 시스템 변경 작업 : KCB(okname), KMCERT, SCI, mobiletown
-
-          ■	Skill : C#, WCF, Windows Service, MSSQL, MySQL
+          Skill :
+            - C#
+            - WCF, Windows Service
+            - MSSQL
 
       - layout: left
-        title: 옥션 e콘텐츠몰 
-        sub_title: 웹서비스
-        quote: 옥션 e콘텐츠몰 유지보수
-        description: | 
-          ■	Mgoon 회사에서 서비스 인수
-          ■	Skill : Java, MySQL, MongoDB
+        title: 자사 게임 웹사이트 구축
+        sub_title: 게임 공식 사이트 · 채널링
+        caption: 2009.11 ~ 2014.07
+        quote: 자사 게임 공식 사이트 및 채널링 사이트 구축
+        description: |
+          - 다수 게임 공식 사이트 구축 및 장기 운영
+          - PG 연동 및 통합 통계 시스템 개발
+
+          Skill :
+            - C#
+            - WCF
+            - MSSQL, MySQL
+
+      - layout: left
+        title: 옥션 e콘텐츠몰
+        sub_title: 웹 서비스 유지보수
+        caption: 2009.11 ~ 2010.06
+        quote: 옥션 e콘텐츠몰 서비스 유지보수
+        description: |
+          - 서비스 인수 이후 시스템 구조 파악 및 안정화
+
+          Skill :
+            - Java
+            - MySQL, MongoDB
 
   - title: Experience
     layout: list
     content:
       - layout: left
-        title: 컬러버스
-        link_text: 컬러버스
-        sub_title: 서버 개발팀장
-        caption: 2022.04 ~ 2023.12
-        quote: >
-          글로벌 메타버스 서비스 플랫폼 개발사 (카카오 자회사)
-        description: | 
-          ■	3D 쇼셜 플랫폼 서비스 컬러버스 개발 (글로벌 서비스)
-            -	데이터 모델링 및 REST API 개발
-          
-          ■	퍼피레드 일부 컨텐츠 WebAPI 개발
-          
-          ■	GitLab CI/CD 이용한 빌드 및 배포 자동화 구축
-          
-          ■	Skill
-            -	Rust, C#.Net
-            -	Redis, Elasticsearch, Nats, MongoDB, MySQL, 
-            -	Docker, GitLab CI/CD, Linux
-            -	AWS : CF, S3, Mediaconvert, ECR, ALB, EC2 …
-
-      - layout: left
-        title: 그라비티
-        link: https://www.gravity.co.kr
-        link_text: 그라비티
-        sub_title: 서버 개발 리더
-        caption: 2022.05 ~ 2022.03
-        quote: >
-          라그나로크 게임 서비스하는 회사
-        description: | 
-          ■	신작 게임 서비스 서버 개발 : HelloHell
-          
-          ■	GitLab CI/CD 이용한 빌드 및 배포 자동화 구축
-          
-          ■	Skill : C#, gRPC, MySQL, Redis, Docker, GitLab CI/CD, Linux
-
-          
-      - layout: left
-        title: 바오밥넷
-        link: http://www.baobabnet.co.kr
-        link_text: Baobabnet
-        sub_title: 서버 개발팀장
-        caption: 2014.08 ~ 2020.11
-        quote: >
-          모바일 게임 개발사 (NHN 자회사)
-        description: | 
-          ■	대부분의 게임 서버 개발에 참여 
-          -	서버 개발팀장 (팀 2명), 대부분의 게임 서버 개발에 참여
-          
-          ■	게임 서버 개발 (글로벌 서비스) : RWBY, Abyss9, Azteka, HelpMeJack,
-          
-          ■	Skill : C#, Redis, nodejs, typescript, MySQL, Redis, AWS : EC2, ALB, Aurora
-
-      - layout: left
-        title: 호라이즌테크놀로지
-        link: http://www.movegames.co.kr
-        link_text: 무브게임즈
-        sub_title: 웹 개발팀장
-        caption: 2009.11 ~ 2014.07
-        quote: >
-          무브게임즈의 웹개발을 전담했던 회사
+        title: 프리랜서
+        sub_title: 서버 · 플랫폼 개발
+        caption: 2024.09 ~ 2026.01
+        quote: 보안·운영 제약 환경 중심의 플랫폼 및 서버 구조 개선
         description: |
-          ■	게임 포털 사이트 신규 개발
+          - 국가정황정보 통합관리 크롤링 플랫폼 설계·구현
+          - 내부 분석 서버와 외부 수집 에이전트 분리 구조 설계
+          - 제한된 인프라 환경에서 안정성과 확장성 중심 구조 개선
 
-          ■	PC 게임 웹사이트 회원 및 빌링 서비스 신규 개발
+      - layout: left
+        title: 주식회사 데이브릭스
+        sub_title: 서버 개발 팀장
+        caption: 2024.09 ~ 2025.10
+        quote: 모바일 게임 서버 구조 개선 및 운영 안정화
+        description: |
+          - 게임 서버 구조 개선 및 비용 최적화
+          - 인증 서비스 분리 및 gRPC 기반 분산 구조 전환
+          - 서비스 운영 종료 시점까지 안정화 및 유지보수 담당
 
-          ■	PC 게임 웹사이트 유지 보수 개발 
-          
-          ■	PC 게임 채널링 구축 
+      - layout: left
+        title: 주식회사 컬러버스
+        sub_title: 백엔드 개발 팀장
+        caption: 2022.03 ~ 2024.01
+        quote: 글로벌 3D 소셜 플랫폼 개발
+        description: |
+          - 플랫폼 백엔드 아키텍처 설계 및 기술 스택 결정
+          - 팀 리딩 및 서비스 간 구조 분리 주도
+          - 글로벌 서비스 확장을 고려한 분산 구조 설계
 
-          ■	옥션 e콘텐츠몰 시스템 유지 보수
+      - layout: left
+        title: (주)그라비티
+        sub_title: 서버 개발 리더
+        caption: 2021.05 ~ 2022.03
+        quote: 글로벌 모바일 게임 서버 개발
+        description: |
+          - 신규 모바일 게임 서버 설계 및 핵심 기능 개발
+          - CI/CD 기반 개발·배포 환경 구축
 
-          ■	IDC 내 인프라 관리
+      - layout: left
+        title: (주)바오밥넷
+        sub_title: 서버 개발 팀장
+        caption: 2014.08 ~ 2020.11
+        quote: 글로벌 모바일 게임 서버 개발 및 운영
+        description: |
+          - 다수의 글로벌 모바일 게임 서버 설계·개발
+          - 실시간 PvP, 매칭, 배틀 서버 구조 설계
+          - 서비스 운영 및 인프라 구조 전환 주도
 
-          ■	Skill : C#, Java, MSSQL, MySQL, MongoDB, SVN
+      - layout: left
+        title: (주)호라이즌테크놀로지
+        sub_title: 웹 개발 팀장
+        caption: 2009.11 ~ 2014.07
+        quote: 게임 포털 및 웹 서비스 개발
+        description: |
+          - 게임 포털·빌링·인증 시스템 설계 및 개발
+          - 웹 개발팀 리딩 및 서비스 운영
 
 # Footer
 footer_show_references: true
