@@ -9,7 +9,7 @@ version: 2
 name: 손원철
 title: 서비스 안정성과 구조를 설계하는 서버 엔지니어
 email: plzhans@gmail.com
-# website: https://blog.plzhans.com
+website: https://blog.plzhans.com
 
 # Dark Mode (true/false/never)
 darkmode: false
