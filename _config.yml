@@ -31,12 +31,12 @@ linkedin_username: plzhans
 
 # Additional icon links
 additional_links:
-# - title: 
-#  icon: fas fa-globe
-#  url: 
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
+- title: HansApp
+  icon: fas fa-server
+  url: https://plzhans.com
+- title: Medifinder
+  icon: fas fa-hospital
+  url: https://medifinder.kr
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
@@ -48,43 +48,67 @@ gtag: "G-6T6KKD9WSE"
 # about_title: About Me
 about_profile_image: images/profile.jpg
 about_content: |
-  웹 개발로 커리어를 시작해 15년 이상 다양한 서비스의 설계·개발·운영을 경험해 왔습니다.
+  최근 제 개발 방식에서 가장 큰 변화는 AI입니다.
 
-  초기에는 웹 서비스와 백오피스 시스템을 중심으로 인증, 빌링, 통계, 운영툴 등을 개발하며
-  서비스 구성 요소들이 어떻게 연결되고 운영되는지에 대한 기본기를 다졌습니다.
+  예전에는 새로운 아이디어나 아키텍처를 떠올려도 실제로 구현할 시간이 부족했습니다. 머릿속으로는 설계를 끝내더라도 업무와 일상에 쫓기다 보면 직접 만들어 보고 검증할 기회를 갖기 어려웠습니다. 하지만 AI를 적극적으로 활용하기 시작하면서 이러한 제약이 크게 줄었습니다. 이제는 문제를 정의하고 구조를 설계하면 AI와 함께 빠르게 구현하고 검증할 수 있게 되었고 개발은 다시 가장 즐기는 취미가 되었습니다.
 
-  이후 모바일 게임 서버와 플랫폼 개발 영역으로 확장하며
-  단순 기능 구현보다 서비스가 장기적으로 안정적으로 운영될 수 있는 구조를 만드는 역할을 맡아 왔습니다.
+  이러한 변화는 실제 결과물로 이어졌습니다. 앞으로 개발할 다양한 서비스를 효율적으로 관리하고 운영하기 위해 [HansApp Backend Platform](https://plzhans.com)을 직접 구축했습니다. OAuth 기반 인증, API Key 관리, 공통 API 등 여러 서비스에서 반복되는 기능을 플랫폼으로 분리해 새로운 서비스를 빠르게 개발할 수 있는 기반을 마련했습니다.
 
-  트래픽 증가, 서비스 확장, 운영 비용과 안정성, 개발 생산성과 유지보수성 사이의 균형을 고민하며
-  시스템 전반을 구조적으로 개선하는 일을 주로 해왔습니다.
+  그리고 직접 만든 플랫폼을 사용하여 [MediFinder](https://medifinder.kr)를 직접 기획하고 개발했습니다. 건강보험심사평가원(HIRA)과 국립중앙의료원(NMC)의 공공데이터를 활용해 AI 기반 병원 정보 검색 서비스를 만들었으며, 실제 운영을 통해 새로운 기술과 아키텍처를 지속적으로 검증하고 개선하고 있습니다.
 
-  여러 프로젝트에서 개발자이자 팀 리더 역할을 수행하며
-  기술 선택과 아키텍처 방향을 결정하고 팀이 안정적으로 개발을 이어갈 수 있는 환경을 만드는 데 집중했습니다.
+  AI는 개발뿐 아니라 일상에서도 중요한 도구가 되었습니다. 개인 AI 비서(OpenClaw)를 구축해 자녀의 어린이집 알림장을 관리하고, 가족 일정과 여행 계획을 정리하는 등 반복적인 개인 업무를 자동화하며 일상에서도 AI를 적극 활용하고 있습니다.
 
-  문제를 단순히 해결하는 데서 그치지 않고,
-  같은 문제가 반복되지 않도록 구조와 흐름을 정리하는 방식을 선호합니다.
+  이처럼 새로운 기술을 적극적으로 받아들이는 개발자이지만 그 기반에는 오랜 실무 경험이 있습니다.
+  웹개발로 커리어를 시작해 다양한 서비스의 설계, 개발, 운영을 경험했습니다. 초기에는 웹 서비스와 백오피스 시스템을 중심으로 인증, 빌링, 통계, 운영 도구 등을 개발하며 서비스의 기반을 다졌고, 이후 모바일 게임 서버와 플랫폼 개발 영역으로 확장하며 단순한 기능 구현보다 장기적으로 안정적으로 운영될 수 있는 구조를 만드는 일에 집중해 왔습니다.
 
-  특정 언어나 도메인에 스스로를 한정하기보다는
-  서비스의 목적과 팀 상황에 맞는 기술을 선택하는 것을 중요하게 생각합니다.
+  트래픽 증가와 서비스 확장, 운영 비용과 안정성, 개발 생산성과 유지보수성 사이의 균형을 고민하며 시스템 전반을 구조적으로 개선하는 일을 주로 수행했습니다. 여러 프로젝트에서는 개발자이자 리더 역할을 맡아 기술 선택과 아키텍처 방향을 결정하고 팀이 안정적으로 개발을 이어갈 수 있는 환경을 만드는 데 집중했습니다.
 
-  C#, TypeScript, Rust, Java, Python 등 다양한 언어와 환경을 경험했으며,
-  새로운 기술을 도입할 때도 실질적인 효과와 운영 관점에서의 이점을 기준으로 판단해 왔습니다.
+  특정 언어나 기술에 스스로를 한정하기보다 서비스의 목적과 팀의 상황에 맞는 기술을 선택하는 것을 중요하게 생각합니다. C#, Java, Node.js, Python, Rust 등 다양한 언어와 환경을 경험했으며 새로운 기술 역시 실제 생산성과 운영 효율을 기준으로 빠르게 익히고 적용하는 편입니다.
 
-  개발은 업무이기 이전에 문제를 해결하는 과정이라고 생각합니다.
-  개인적으로도 일상에서 불편한 점을 개선하기 위한 소규모 자동화 도구나
-  백업 프로그램을 만들어 사용하는 것을 즐깁니다.
-
-  앞으로도 팀과 서비스에 안정감을 줄 수 있는 개발자로서
-  복잡한 문제를 단순하게 정리하고 지속 가능한 구조를 만들어 가는 역할을 수행하고자 합니다.
+  저는 개발을 단순히 코드를 작성하는 일이 아니라 문제를 해결하고 지속 가능한 서비스를 만드는 과정이라고 생각합니다. AI 시대에도 가장 중요한 것은 구현 속도가 아니라 문제를 정의하고 구조를 설계하는 능력이라고 믿습니다. 앞으로도 새로운 기술을 적극적으로 활용해 아이디어를 실제 서비스로 만들고 운영을 통해 검증하며 더 나은 시스템을 만들어가는 개발자로 기여하고자 합니다. 감사합니다.
 content:
   - title: Projects
     layout: list
     content:
       - layout: left
+        title: HansApp 플랫폼 & Medifinder
+        sub_title: 개인 백엔드 플랫폼 · AI 병원 검색 서비스
+        caption: 2026.07 ~ 진행중
+        quote: 개인 서비스를 반복 구축하기 위한 백엔드 플랫폼을 먼저 만들고, 그 위에 AI 기반 병원 검색 서비스를 구축
+        description: |
+          - 개인 서비스를 빠르게 구축하기 위한 재사용 가능한 백엔드 플랫폼(BaaS 형태) 설계·구축
+          - 플랫폼 관리 콘솔 개발 ([plzhans.com](https://plzhans.com))
+          - 플랫폼 기반 위에 AI 기반 병원 검색 서비스 Medifinder 구축 ([medifinder.kr](https://medifinder.kr))
+          - OAuth 인증, React 프런트엔드, Elasticsearch 기반 검색 구조 설계
+          - GitHub Actions 기반 배포 자동화 구성
+          - Claude 등 AI를 적극 활용해 설계 검토·코드 리뷰·리팩터링 진행
+
+          Skill :
+            - Node.js, React
+            - Oracle HeatWave(MySQL), Redis, Elasticsearch
+            - OAuth2, GitHub Actions
+
+      - layout: left
+        title: 입소문 광장KR
+        sub_title: 외국인 유치사업 병원 검색 플랫폼
+        caption: 2026.03 ~ 2026.07
+        quote: 일본 성형외과 검색 서비스(Report.clinic)를 기반으로 한 외국인 의료관광 병원 검색 플랫폼
+        description: |
+          - 병원 검색 플랫폼 및 파트너(병원) 시스템 전체 아키텍처 설계·개발
+          - 정부 공공데이터를 활용한 병원 정보 연계 시스템 구축
+          - 일본 회원(Report.clinic) 기반 OAuth 연동 및 통합 회원 체계 설계
+          - Terraform 기반 AWS 인프라 구축, GitLab CI/CD 빌드·배포 자동화
+          - 단독 백엔드 담당으로 설계부터 배포까지 전 과정 수행
+
+          Skill :
+            - Java (Spring Boot)
+            - MySQL, Redis
+            - AWS, Terraform, GitLab CI/CD
+
+      - layout: left
         title: 국가정황정보 통합관리 크롤링 플랫폼
         sub_title: 분석 서버 · 크롤링 에이전트
-        caption: 2025.09 ~ 2026.01
+        caption: 2025.10 ~ 2026.02
         quote: 보안 제약 환경에서 대규모 외부 정황 정보를 수집·분석하는 내부 통합 플랫폼
         description: |
           - 내부망 분석 서버(Java)와 외부망 크롤링 에이전트(Python)를 분리 설계
@@ -138,7 +162,7 @@ content:
       - layout: left
         title: 퍼피레드
         sub_title: 모바일 게임 · 메타버스
-        caption: 2022.03 ~ 2022.07
+        caption: 2022.04 ~ 2022.07
         quote: 자사 IP 기반 모바일 게임 서버 개발
         description: |
           - 요리 콘텐츠 서버 기능 개발
@@ -254,7 +278,7 @@ content:
       - layout: left
         title: 잼게임 포털 사이트
         sub_title: 게임 포털 · 빌링 플랫폼
-        caption: 2009.11 ~ 2014.07
+        caption: 2014.02 ~ 2014.07
         quote: 다수 게임을 통합 관리하는 포털 서비스
         description: |
           - 게임 멤버십·빌링 통합 포털 구축
@@ -269,7 +293,7 @@ content:
       - layout: left
         title: 자사 게임 웹사이트 구축
         sub_title: 게임 공식 사이트 · 채널링
-        caption: 2009.11 ~ 2014.07
+        caption: 2010.01 ~ 2014.07
         quote: 자사 게임 공식 사이트 및 채널링 사이트 구축
         description: |
           - 다수 게임 공식 사이트 구축 및 장기 운영
@@ -296,14 +320,24 @@ content:
     layout: list
     content:
       - layout: left
-        title: 프리랜서
-        sub_title: 서버 · 플랫폼 개발
-        caption: 2024.09 ~ 2026.01
-        quote: 보안·운영 제약 환경 중심의 플랫폼 및 서버 구조 개선
+        title: 프록시
+        sub_title: 프리랜서 · 서버 개발
+        caption: 2026.03 ~ 2026.07
+        quote: 외국인 의료관광 병원 검색 플랫폼 개발
         description: |
-          - 국가정황정보 통합관리 크롤링 플랫폼 설계·구현
-          - 내부 분석 서버와 외부 수집 에이전트 분리 구조 설계
-          - 제한된 인프라 환경에서 안정성과 확장성 중심 구조 개선
+          - 병원 검색 플랫폼 및 파트너 시스템 설계·개발
+          - 정부 공공데이터 연계, 일본 회원 기반 OAuth 통합 회원 체계 설계
+          - Terraform·AWS 기반 클라우드 인프라 구축 및 DevOps 환경 구성
+
+      - layout: left
+        title: 가벗
+        sub_title: 프리랜서 · 서버 개발
+        caption: 2025.10 ~ 2026.02
+        quote: 법무부 국가정황 통합관리 시스템 개발
+        description: |
+          - 해외 정보 수집·분석 플랫폼 설계 및 개발
+          - 내부망 분석 서버(Java)와 외부망 크롤링 에이전트(Python) 분리 아키텍처 설계
+          - 크롤링 플랫폼 및 관리자 시스템 개발
 
       - layout: left
         title: 주식회사 데이브릭스
@@ -318,7 +352,7 @@ content:
       - layout: left
         title: 주식회사 컬러버스
         sub_title: 백엔드 개발 팀장
-        caption: 2022.03 ~ 2024.01
+        caption: 2022.04 ~ 2023.12
         quote: 글로벌 3D 소셜 플랫폼 개발
         description: |
           - 플랫폼 백엔드 아키텍처 설계 및 기술 스택 결정
@@ -337,7 +371,7 @@ content:
       - layout: left
         title: (주)바오밥넷
         sub_title: 서버 개발 팀장
-        caption: 2014.08 ~ 2020.11
+        caption: 2014.08 ~ 2020.07
         quote: 글로벌 모바일 게임 서버 개발 및 운영
         description: |
           - 다수의 글로벌 모바일 게임 서버 설계·개발
@@ -347,7 +381,7 @@ content:
       - layout: left
         title: (주)호라이즌테크놀로지
         sub_title: 웹 개발 팀장
-        caption: 2009.11 ~ 2014.07
+        caption: 2010.01 ~ 2014.07
         quote: 게임 포털 및 웹 서비스 개발
         description: |
           - 게임 포털·빌링·인증 시스템 설계 및 개발
