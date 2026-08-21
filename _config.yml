@@ -146,6 +146,10 @@ content:
         title: 컬러버스 플랫폼
         sub_title: 글로벌 3D 소셜 플랫폼
         caption: 2022.08 ~ 2023.12
+        additional_links:
+          - title: 소개영상 - 카카오 유니버스의 시작
+            icon: fab fa-youtube
+            url: https://youtu.be/IKoiUgAxzrI?si=YJGas2UNAJ4tyyaG
         quote: 웹 기반 3D 월드를 생성·운영할 수 있는 메타버스 플랫폼
         description: |
           - 분산 서비스 아키텍처 기반 플랫폼 백엔드 설계 및 개발 총괄
@@ -163,6 +167,10 @@ content:
         title: 퍼피레드
         sub_title: 모바일 게임 · 메타버스
         caption: 2022.04 ~ 2022.07
+        additional_links:
+          - title: 퍼피레드
+            icon: fab fa-app-store
+            url: https://apptopia.com/ios/app/1576310836/about
         quote: 자사 IP 기반 모바일 게임 서버 개발
         description: |
           - 요리 콘텐츠 서버 기능 개발
@@ -177,6 +185,10 @@ content:
         title: HelloHell
         sub_title: 글로벌 모바일 RPG
         caption: 2021.05 ~ 2022.03
+        additional_links:
+          - title: HelloHell 플레이 영상
+            icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=13mACwr52X0
         quote: 신규 캐주얼 수집형 RPG 모바일 게임
         description: |
           - gRPC 기반 게임 서버 아키텍처 설계 및 핵심 기능 구현
@@ -192,12 +204,20 @@ content:
         title: RWBY 아미티 아레나
         sub_title: 글로벌 실시간 PvP 게임 서버
         caption: 2017.07 ~ 2020.11
+        additional_links:
+          - title: RWBY Amity Arena Teaser Trailer
+            icon: fab fa-youtube
+            url: https://youtu.be/rO-WVZbBDMw
+          - title: RWBY Amity Arena Gameplay
+            icon: fab fa-youtube
+            url: https://youtu.be/KEKpX-IH2ik
         quote: NHN 한게임 퍼블리싱 글로벌 실시간 PvP 모바일 게임
         description: |
           - 지역(리즌) 기반 매칭 및 배틀 서버 분산 구조 설계
           - Socket 중심 실시간 통신 서버 직접 구현
           - 배틀 리플레이·클랜·채팅 등 실시간 상호작용 기능 개발
           - 글로벌 서비스 운영 비용 절감을 위한 인프라 구조 전환
+          - [서비스 구조도](images/projects/baobabnet-bg5/BG5_Service_structure.pdf)
 
           Skill :
             - C#, Socket, WCF
@@ -208,12 +228,23 @@ content:
         title: Abyss9
         sub_title: 글로벌 성장형 RPG
         caption: 2019.09 ~ 2020.11
+        additional_links:
+          - title: Abyss9 소개 영상
+            icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=13mACwr52X0
+          - title: Abyss9 Play Movie1
+            icon: fab fa-youtube
+            url: https://youtu.be/PMZPVVMj57Y
+          - title: Abyss9 Play Movie2
+            icon: fab fa-youtube
+            url: https://youtu.be/aRTKiqvdQBo
         quote: 글로벌 서비스를 목표로 한 성장형 RPG 모바일 게임
         description: |
           - 게임 서버 및 웹 기반 운영툴 개발
           - GitLab CI/CD 기반 빌드·배포 자동화
           - Toast Gamebase 연계 인증 및 운영 처리
           - AWS EC2 / ALB / CloudFront 환경에서 서비스 운영
+          - [서비스 구조도](images/projects/baobabnet-bg7/BG7_Service_structure.pdf)
 
           Skill :
             - Node.js, TypeScript
@@ -236,6 +267,10 @@ content:
         title: Azteka
         sub_title: 실시간 PvP 모바일 게임
         caption: 2015.12 ~ 2016.06
+        additional_links:
+          - title: 아즈테카(AZTEKA) CBT 플레이영상 안드로이드 전략 게임
+            icon: fab fa-youtube
+            url: https://www.youtube.com/watch?v=T1cFWqdoibw
         quote: NHN 한게임 퍼블리싱 예정 실시간 PvP 게임
         description: |
           - ProudNet 기반 실시간 게임 서버 개발
@@ -263,6 +298,10 @@ content:
         title: HelpMeJack
         sub_title: 글로벌 성장형 RPG
         caption: 2014.08 ~ 2014.12
+        additional_links:
+          - title: HelpMeJack Awesome new game!
+            icon: fab fa-youtube
+            url: https://youtu.be/jIWOUUvDmcc
         quote: 글로벌 서비스를 목표로 한 성장형 RPG 모바일 게임
         description: |
           - 게임 콘텐츠 로직 개발
@@ -361,6 +400,7 @@ content:
 
       - layout: left
         title: (주)그라비티
+        link: https://www.gravity.co.kr
         sub_title: 서버 개발 리더
         caption: 2021.05 ~ 2022.03
         quote: 글로벌 모바일 게임 서버 개발
@@ -370,6 +410,7 @@ content:
 
       - layout: left
         title: (주)바오밥넷
+        link: http://www.baobabnet.co.kr
         sub_title: 서버 개발 팀장
         caption: 2014.08 ~ 2020.07
         quote: 글로벌 모바일 게임 서버 개발 및 운영
@@ -380,6 +421,8 @@ content:
 
       - layout: left
         title: (주)호라이즌테크놀로지
+        link: http://www.movegames.co.kr
+        link_text: 무브게임즈
         sub_title: 웹 개발 팀장
         caption: 2010.01 ~ 2014.07
         quote: 게임 포털 및 웹 서비스 개발
